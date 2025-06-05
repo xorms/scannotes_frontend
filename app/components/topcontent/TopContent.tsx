@@ -4,7 +4,7 @@ import { selectSelectedScanId,selectSelectedScan,selectNotes,setNotes } from '@/
 import { useDispatch } from 'react-redux';
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { formatDate } from "../tools";
+import { formatDate } from "../Tools";
 
 export const TopContent = () => {
   const selectedScanId = useSelector(selectSelectedScanId);

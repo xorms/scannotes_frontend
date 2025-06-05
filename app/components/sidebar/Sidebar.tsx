@@ -4,7 +4,7 @@ import { setSelectedScanId ,setSelectedScan } from '@/lib/features/scans/scansAp
 import { useDispatch } from 'react-redux';
 import { Button } from 'flowbite-react';
 import { Scan } from "@/app/types/Scan";
-import { formatDate } from "../tools";
+import { formatDate } from "../Tools";
 
 export const Sidebar = () => {
    const { data, isLoading, error } = useGetScansQuery();
