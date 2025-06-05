@@ -1,16 +1,81 @@
-html,
-body {
-  min-height: 100vh;
+@import "flowbite/dist/flowbite.min.css";
+
+/* 容器样式 */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar样式 */
+.sidebar {
+  width: 30%;
+  min-width: 30%;  
+  background-color: #f4f4f4;
+  padding: 20px;
+  overflow-y: auto;  
+}
+
+/* List样式 */
+.list {
+  list-style-type: none;  
   padding: 0;
   margin: 0;
-  font-family: system-ui, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.list-item {
+  display: flex;
+  justify-content: space-between;  
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;  
 }
 
-* {
-  box-sizing: border-box;
+.list-column1 {
+  flex: 1; /* 占据1份宽度 */
+  background-color: #e0e0e0; /* 示例背景颜色 */
+  padding: 10px;
+}
+
+.list-column2 {
+  flex: 4; /* 占据2份宽度 */
+  background-color: #d0d0d0; /* 示例背景颜色 */
+  padding: 10px;
+}
+
+.list-column3 {
+  flex: 4; /* 占据1份宽度 */
+  background-color: #c0c0c0; /* 示例背景颜色 */
+  padding: 10px;
+}
+.list-column4 {
+  flex: 4; /* 占据1份宽度 */
+  background-color:rgb(232, 231, 231); /* 示例背景颜色 */
+  padding: 10px;
+}
+
+/* Main Panel样式 */
+.main-panel {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;  
+}
+
+.top-content{
+  flex: 1; /* 上下两块内容各占一半高度 */
+  padding: 10px;
+  border: 1px solid #ddd;  
+  overflow-y: auto; /* 内容超出时垂直滚动 */
+  margin-bottom: 10px;  
+}
+
+.bottom-content {
+  height: 400px; /* 固定高度 */
+  background-color: #f4f4f4; /* 示例背景颜色 */
+  padding: 10px;
+  border: 1px solid #ddd;  
+}
+
+.text-red-500{
+  color: red;
 }
